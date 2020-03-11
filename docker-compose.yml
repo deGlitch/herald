@@ -1,0 +1,26 @@
+version: '3'
+services: 
+    sync-api:
+        environment:
+            - MONGODB_HOST=mongodb
+            - MONGODB_POST=27017
+            - MONGODB_SERVER=dev-command-pod
+            - REDIS_HOST=redis
+            - REDIS_PORT=6379
+            - RABBIT_HOST=rabbitMQ
+            - RABBIT_PORT=5672
+            - HOST=0.0.0.0
+            - POST=8080
+        build: ./sync-service
+        ports:
+            - "80:8080"
+    mongodb:
+        image: "mvertes/alpine-mongo"
+        volumes: 
+            - /private/var/mongodb:/data/db
+        ports:
+            - "27017:27017"
+    redis:
+        image: "redis:alpine"
+    rabbitMQ:
+        image: "rabbitmq:3"

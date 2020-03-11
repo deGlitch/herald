@@ -1,0 +1,16 @@
+
+panel: test-1
+forms:
+  Form1:
+    name: Test Form
+    description: "a description"
+    fields:
+      - type: string
+        id: appTitle
+        name: App Title
+        default: Test App
+      - type: boolean
+        id: showButton
+        name: Show Button
+        default: true
+

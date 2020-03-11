@@ -1,0 +1,14 @@
+
+forms:
+  Form1:
+    description: "a description"
+    fields:
+      - type: string
+        id: appTitle
+        name: App Title
+        default: Test App
+      - type: boolean
+        id: showButton
+        name: Show Button
+        default: true
+

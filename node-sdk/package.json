@@ -1,0 +1,17 @@
+{
+  "name": "node-sdk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^17.1.0",
+    "axios": "^0.19.2",
+    "yaml": "^1.7.2"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/hapi__joi": "^16.0.12",
+    "@types/node": "^13.9.0",
+    "@types/yaml": "^1.2.0"
+  }
+}

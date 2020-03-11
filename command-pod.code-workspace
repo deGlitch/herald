@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "sync-service"
+		},
+		{
+			"path": "web-app"
+		},
+		{
+			"path": "node-sdk"
+		},
+		{
+			"path": "utils"
+		},
+		{
+			"path": "packages"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}
