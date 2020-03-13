@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { formScheme } from '../scheme'
+import { FormJoiScheme } from '../src/scheme'
 
 const validForm = {
     id: "id",
@@ -73,31 +73,31 @@ const invalidFormWithDescriptionAndInvalidStringField = {
 
 describe('formScheme validate function', () => {
     it('should find the bare bones form valid', () => {
-        const { error } = formScheme.validate(validForm)
+        const { error } = FormJoiScheme.validate(validForm)
         expect(error).to.be.undefined
     })
     it('should find the form with description valid', () => {
-        const { error } = formScheme.validate(validFormWithDescriptions)
+        const { error } = FormJoiScheme.validate(validFormWithDescriptions)
         expect(error).to.be.undefined
     })
     it('should find the form with fields valid', () => {
-        const { error } = formScheme.validate(validFormWithFields)
+        const { error } = FormJoiScheme.validate(validFormWithFields)
         expect(error).to.be.undefined
     })
     it('should find the form with description and fields valid', () => {
-        const { error } = formScheme.validate(validFormWithDescriptionAndFields)
+        const { error } = FormJoiScheme.validate(validFormWithDescriptionAndFields)
         expect(error).to.be.undefined
     })
     it('should find an empty form invalid', () => {
-        const { error } = formScheme.validate({})
+        const { error } = FormJoiScheme.validate({})
         expect(error).to.not.be.undefined
     })
     it('should find an a form with an invalid string field, invalid', () => {
-        const { error } = formScheme.validate(invalidFormWithDescriptionAndInvalidStringField)
+        const { error } = FormJoiScheme.validate(invalidFormWithDescriptionAndInvalidStringField)
         expect(error).to.not.be.undefined
     })
     it('should find an a form with an invalid bool field, invalid', () => {
-        const { error } = formScheme.validate(invalidFormWithDescriptionAndInvalidBoolField)
+        const { error } = FormJoiScheme.validate(invalidFormWithDescriptionAndInvalidBoolField)
         expect(error).to.not.be.undefined
     })
 })

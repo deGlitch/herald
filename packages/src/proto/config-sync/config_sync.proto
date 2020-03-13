@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package configsync;
+
+service ConfigSync {
+
+    // a bi directional stream of config updates from the server and confirm updates from the client
+    rpc ConfigUpdatesStream(stream ConfirmUpdate) returns (stream Config) {}
+
+    // a request for a check if the scheme changed
+    rpc CheckIfConfigSchemeChanged(CheckIfConfigSchemeChangedRequest) returns (CheckIfConfigSchemeChangedResponse) {}
+
+    // a request to update the scheme
+    rpc SendConfigSchemeChange(SendConfigSchemeChangeRequest) returns (SendConfigSchemeChangeResponse) {}
+}
+
+message SendConfigSchemeChangeRequest {
+    string schemeJsonData = 1;
+}
+
+message CheckIfConfigSchemeChangedRequest {
+    string panelID = 1;
+    string schemeHash = 2;
+}
+
+message CheckIfConfigSchemeChangedResponse {
+    bool didChange = 1;
+}
+
+message ConfirmUpdate {
+    bool wasSuccessful = 1;
+    int64 updateTimestamp = 2;
+}
+
+message SendConfigSchemeChangeResponse {
+    bool wasSuccessful = 1;
+    int64 updateTimestamp = 2;
+}
+
+message Config {
+    string configJsonData = 1;
+}
+ 
