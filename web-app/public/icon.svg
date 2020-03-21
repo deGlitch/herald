@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="175px" height="172px" viewBox="0 0 175 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>herald-ogo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="20.5613268%" y1="2.0723112%" x2="77.4295327%" y2="94.0380666%" id="linearGradient-1">
+            <stop stop-color="#DC4040" offset="0%"></stop>
+            <stop stop-color="#B61E1E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="43.52%" x2="35.6375058%" y2="66.4287784%" id="linearGradient-2">
+            <stop stop-color="#FFCE0D" offset="0%"></stop>
+            <stop stop-color="#DEB410" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.4615709%" id="linearGradient-3">
+            <stop stop-color="#FFCE0D" offset="0%"></stop>
+            <stop stop-color="#DEB410" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="53.2397363%" y1="13.3951243%" x2="29.1472355%" y2="121.509085%" id="linearGradient-4">
+            <stop stop-color="#FFCE0D" offset="0%"></stop>
+            <stop stop-color="#DEB410" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.4615709%" id="linearGradient-5">
+            <stop stop-color="#FFCE0D" offset="0%"></stop>
+            <stop stop-color="#DEB410" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="44.5285813%" x2="45.1816089%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFCE0D" offset="0%"></stop>
+            <stop stop-color="#DEB410" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-7" x="183.158757" y="8.67975617" width="8.45748547" height="71.25" rx="4.22874273"></rect>
+        <filter x="-283.8%" y="-30.9%" width="620.2%" height="161.8%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="-2" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-15.000000, 0.000000)">
+            <g id="herald-ogo" transform="translate(-10.000000, 2.000000)">
+                <circle id="Oval" fill="url(#linearGradient-1)" cx="97.2398898" cy="94.4759906" r="66.75"></circle>
+                <g id="Horn" transform="translate(97.489890, 94.725991) rotate(-43.000000) translate(-97.489890, -94.725991) translate(1.489890, 54.725991)">
+                    <path d="" id="Path" stroke="#979797" stroke-width="1.425"></path>
+                    <rect id="Rectangle" stroke="url(#linearGradient-2)" stroke-width="2.85" transform="translate(89.062500, 59.850000) rotate(1.000000) translate(-89.062500, -59.850000) " x="54.8625" y="48.45" width="68.4" height="22.8" rx="11.4"></rect>
+                    <polygon id="Rectangle" fill="url(#linearGradient-3)" points="4.74164687 38.762111 159.6 31.8781517 159.6 57.9985475 3.91881889 51.5579536"></polygon>
+                    <path d="M188.1,10.1047562 C169.211862,10.1047562 153.9,25.4166177 153.9,44.3047562 C153.9,63.1928946 169.211862,78.5047562 188.1,78.5047562" id="Path" fill="url(#linearGradient-4)"></path>
+                    <rect id="Rectangle" fill="url(#linearGradient-5)" x="0.487167844" y="35.1358308" width="5.54166667" height="19.95" rx="2.77083333"></rect>
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <use fill="url(#linearGradient-6)" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

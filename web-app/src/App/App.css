@@ -1,0 +1,16 @@
+:root {
+    --app-font-family: 'Baloo Bhaina 2', cursive;
+    --offwhite-bg-color: #FAFBFC;
+}
+
+/* // $primary: #F85A3E;
+// $cosmic-latte: #FFF8E8;
+// $white: #FFFFFF;
+// $mellow-yellow: #FCD581;
+// $english-red: #A54657;
+// $off-white: #FAFBFC; */
+
+.app-container {
+    height: 100vh;
+    width: 100vw;
+}

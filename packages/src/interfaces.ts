@@ -4,6 +4,7 @@ export interface PanelDescriptor {
 }
 
 export interface PanelData {
+    panel: string,
     forms: FormData[]
 }
 
